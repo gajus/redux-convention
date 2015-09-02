@@ -1,8 +1,13 @@
-let fromCCAtoFSA,
-    fromFSAtoCCA;
+"use strict";
 
-fromCCAtoFSA = (CCAction) => {
-    let FSAction;
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var fromCCAtoFSA = undefined,
+    fromFSAtoCCA = undefined;
+
+fromCCAtoFSA = function (CCAction) {
+    var FSAction = undefined;
 
     FSAction = {};
 
@@ -26,8 +31,8 @@ fromCCAtoFSA = (CCAction) => {
     return FSAction;
 };
 
-fromFSAtoCCA = (FSAction) => {
-    let CCAction;
+fromFSAtoCCA = function (FSAction) {
+    var CCAction = undefined;
 
     CCAction = {};
 
@@ -50,7 +55,9 @@ fromFSAtoCCA = (FSAction) => {
     return CCAction;
 };
 
-export default {
-    fromCCAtoFSA,
-    fromFSAtoCCA
+exports["default"] = {
+    fromCCAtoFSA: fromCCAtoFSA,
+    fromFSAtoCCA: fromFSAtoCCA
 };
+module.exports = exports["default"];
+//# sourceMappingURL=mapper.js.map

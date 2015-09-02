@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;;;;sBAAmB,UAAU;;;;;;QAIzB,MAAM;QACN,UAAU","file":"index.js","sourcesContent":["import mapper from './mapper';\nimport middleware from './mapper';\n\nexport {\n    mapper,\n    middleware\n};\n"],"sourceRoot":"/source/"}

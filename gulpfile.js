@@ -6,7 +6,7 @@ import sourcemaps from 'gulp-sourcemaps';
 
 gulp.task('lint', () => {
     return gulp
-        .src(['./src/**/*.js', './tests/**/*.js'])
+        .src(['./src/**/*.js', './test/**/*.js'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failOnError());
@@ -14,7 +14,7 @@ gulp.task('lint', () => {
 
 gulp.task('test', ['lint'], () => {
     return gulp
-        .src('./tests/**/*.js')
+        .src('./test/**/*.js')
         .pipe(mocha());
 });
 
@@ -28,7 +28,7 @@ gulp.task('build', ['test'], () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch(['./src/**/*', './tests/**/*'], ['default']);
+    gulp.watch(['./src/**/*', './test/**/*'], ['default']);
 });
 
 gulp.task('default', ['build']);
