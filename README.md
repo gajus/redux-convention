@@ -3,11 +3,20 @@
 [![Travis build status](http://img.shields.io/travis/gajus/redux-convention/master.svg?style=flat-square)](https://travis-ci.org/gajus/redux-convention)
 [![NPM version](http://img.shields.io/npm/v/redux-convention.svg?style=flat-square)](https://www.npmjs.org/package/redux-convention)
 
-Facilitates conversion of Flux Standard Action (FSA) to Canonical Composition Action (CCA) and vice-versa.
+Facilitates conversion of [Flux Standard Action](https://github.com/acdlite/flux-standard-action) (FSA) to [Canonical Composition Action](https://github.com/gajus/canonical-reducer-composition/#action) (CCA) and vice-versa.
 
+* [Use Case](#use-case)
 * [Usage](#usage)
     * [Function](#function)
     * [Middleware](#middleware)
+
+## Use Case
+
+`redux-convention` is used to convert between two competing standards: [Flux Standard Action](https://github.com/acdlite/flux-standard-action) and [Canonical Composition Action](https://github.com/gajus/canonical-reducer-composition). The two standards can be used together in the same project, e.g. the main project might use CCA, but it can rely on middleware that is designed for FSA. `redux-convention` is used to convert actions between the two standards.
+
+FSA is the more popular standard. There is a number of libraries that implement FSA (https://github.com/acdlite/flux-standard-action#libraries) and a lot more that unofficially implement FSA in full or in part.
+
+CCA is part of broader standard called [Canonical Reducer Composition](https://github.com/gajus/canonical-reducer-composition/) (CRC). The aim of CRC is to standardize [Redux](https://github.com/rackt/redux) application composition. CCA is a variation of FSA that aims to improve action semantics. [redux-immutable](https://github.com/gajus/redux-immutable) is an example of a library that implements CCA standard.
 
 ## Usage
 
