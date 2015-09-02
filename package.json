@@ -1,0 +1,39 @@
+{
+  "name": "redux-convention",
+  "description": "Facilitates conversion of Flux Standard Action (FSA) to Canonical Composition Action (CCA) and vice-versa.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gajus/redux-convention"
+  },
+  "keywords": [
+    "flux",
+    "standard",
+    "action",
+    "canonical"
+  ],
+  "version": "0.0.0",
+  "author": {
+    "name": "Gajus Kuizinas",
+    "email": "gk@anuary.com",
+    "url": "http://gajus.com"
+  },
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.1",
+    "chai": "^3.2.0",
+    "eslint": "^1.3.1",
+    "eslint-plugin-react": "^3.3.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-eslint": "^1.0.0",
+    "gulp-mocha": "^2.1.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "sinon": "^1.16.1"
+  },
+  "scripts": {
+    "test": "babel-node ./node_modules/.bin/gulp test",
+    "build": "babel-node ./node_modules/.bin/gulp build"
+  }
+}
