@@ -1,5 +1,5 @@
 import mapper from './mapper';
-import middleware from './mapper';
+import middleware from './middleware';
 
 export {
     mapper,
